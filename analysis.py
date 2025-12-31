@@ -93,8 +93,8 @@ def main():
         # Sort by count descending
         sorted_indices = np.argsort(counts_months)[::-1]
         
-        print("Top 3 Birth Months:")
-        for i in range(min(3, len(sorted_indices))):
+        print("Top Birth Months:")
+        for i in range(min(12, len(sorted_indices))):
             idx = sorted_indices[i]
             month_num = unique_months[idx]
             count = counts_months[idx]
